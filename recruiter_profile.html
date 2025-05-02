@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Profile | SkillMatch</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Profile Banner -->
+        <div class="profile-banner"></div>
+        
+        <!-- Profile Picture Section -->
+        <div class="profile-img-container">
+            <label class="profile-img-label">
+                <img id="profileImg" src="images/default-profile.png" alt="Profile Image" class="profile-img">
+            </label>
+        </div>
+
+        <!-- Recruiter Details (Now Dynamic) -->
+        <div class="profile-info">
+            <h2 id="recruiterName">Loading...</h2>
+            <p id="recruiterPosition">Loading...</p>
+            <p id="recruiterCompany">Loading...</p>
+            <p id="recruiterEmail"><i class="fas fa-envelope"></i> Loading...</p>
+        </div>
+        
+        <!-- Edit & Change Password Buttons -->
+        <div class="button-group">
+            <a href="edit_profile.html" class="btn primary-btn"><i class="fas fa-edit"></i> Edit Profile</a>
+            <a href="change_password.html" class="btn secondary-btn"><i class="fas fa-key"></i> Change Password</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("RecruiterProfileServlet", { credentials: "include" }) // Ensure session data is included
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        alert(data.error);
+                    } else {
+                        document.getElementById("recruiterName").innerText = data.company_name || "Not Available";
+                        document.getElementById("recruiterCompany").innerText = data.company_name || "Not Available";
+                        document.getElementById("recruiterEmail").innerHTML = `<i class="fas fa-envelope"></i> ${data.email || "Not Available"}`;
+                        document.getElementById("recruiterPosition").innerText = data.position || "Not Available";
+
+                        // Load profile image if available
+                        if (data.profile_image) {
+                            document.getElementById("profileImg").src = data.profile_image;
+                        }
+                    }
+                })
+                .catch(error => console.error("Error fetching recruiter profile:", error));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #5e4b8b;
+    padding: 10px 0;
+    position: relative;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+#navbar .logo {
+    height: 40px;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    margin: 0 15px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Layout for Frames */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-frame {
+    width: 18%; /* Slightly increased size */
+    background-color: #5e4b8b; /* Matched navbar color */
+    padding: 15px;
+    border-right: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-frame {
+    width: 82%; /* Adjusted size */
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Options */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 8px 12px; /* Reduced height */
+    background-color: #c7a8df; /* Lighter shade of violet */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 8px 0; /* Reduced spacing */
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #a385c2;
+    transform: scale(1.05);
+}
+
+/* Adding Icons for Specific Buttons */
+.btn[href*="recruiter_add_job"]::before {
+    content: "➕";
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.btn[href*="recruiter_remove_job"]::before {
+    content: "➖";
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.btn[href*="recruiter_profile"]::before {
+    content: "👤";
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.btn[href*="search_profiles"]::before {
+    content: "🔍";
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.btn[href*="history"]::before {
+    content: "📜";
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.btn[href*="view_applications"]::before {
+    content: "📂";
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+/* Right frame default text */
+.iframe-container {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Form Container */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields */
+.form-container label {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: #a137cb;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #6d1ba0;
+}
+
+.danger-btn {
+    background-color: #a137cb;
+    color: white;
+}
+
+.danger-btn:hover {
+    background-color: #6d1ba0;;
+}

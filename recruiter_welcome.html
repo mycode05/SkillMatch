@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+            <ul id="menu">
+                <li><a href="RecruiterLogoutServlet">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Left Frame -->
+        <div class="left-frame">
+            <div class="options">
+                <a href="recruiter_add_job.html" class="btn" target="content-frame">Add Job</a>
+                <a href="recruiter_remove_job.html" class="btn" target="content-frame">Remove Job</a>
+                <a href="recruiter_history.html" class="btn" target="content-frame">History</a>
+                <a href="view_applications.html" class="btn" target="content-frame">View Applications</a>
+            </div>
+        </div>
+
+        <!-- Right Frame -->
+        <div class="right-frame">
+            <iframe class="iframe-container" name="content-frame" src="recruiter_user.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>

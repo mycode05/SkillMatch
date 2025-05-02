@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Login</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div id="navbar" class="obj-width">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo of the website"></a>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recruiter_register.html">Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Recruiter Login Section -->
+    <section class="login sec-space">
+        <div class="obj-width">
+            <h2>Recruiter Login</h2>
+            <form action="RecruiterLoginServlet" method="POST">
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="recruiter_register.html">Register here</a></p>
+            <p><a href="recruiter-forgot-password.html">Forgot Password?</a></p>
+        </div>
+    </section>
+</body>
+</html>

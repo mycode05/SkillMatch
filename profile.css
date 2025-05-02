@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Profile Container */
+.profile-container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Profile Banner */
+.profile-banner {
+    height: 120px;
+    background: linear-gradient(135deg, #8333A2 0%, #5e1f79 100%);
+}
+
+/* Profile Image */
+.profile-img-container {
+    margin-top: -60px;
+    padding: 0 25px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.upload-btn {
+    background-color: #8333A2;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #5e1f79;
+}
+
+/* Profile Info */
+.profile-info {
+    padding: 0 25px 15px;
+    margin-top: 10px;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0 5px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #717171;
+    font-size: 15px;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 15px;
+    padding: 20px 25px;
+}
+
+.btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #8333A2;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #5e1f79;
+}
+
+.secondary-btn {
+    background-color: #f8f9fe;
+    color: #8333A2;
+    border: 1px solid #8333A2;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(131, 51, 162, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .profile-container {
+        max-width: 100%;
+        margin: 10px;
+        border-radius: 12px;
+    }
+    
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .upload-btn {
+        font-size: 13px;
+        padding: 7px 14px;
+    }
+    
+    .profile-info h2 {
+        font-size: 20px;
+    }
+    
+    .profile-info p {
+        font-size: 14px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

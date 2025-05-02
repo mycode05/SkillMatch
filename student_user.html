@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h2 id="welcomeText">Welcome, Student!</h2>
+        <p>Start exploring job applications and manage your listings.</p>
+    </div>
+
+    <script>
+        // Fetch username from session storage or backend (modify accordingly)
+        const username = sessionStorage.getItem("username") || "Student";
+        document.getElementById("welcomeText").innerText = `Welcome, ${username}!`;
+    </script>
+</body>
+</html>

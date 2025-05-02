@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- Student Servlet Definitions -->
+    <servlet>
+        <servlet-name>StudentLoginServlet</servlet-name>   
+        <servlet-class>StudentLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentLoginServlet</servlet-name>
+        <url-pattern>/StudentLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentRegisterServlet</servlet-name>
+        <servlet-class>StudentRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentRegisterServlet</servlet-name>
+        <url-pattern>/StudentRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentWelcomeServlet</servlet-name>
+        <servlet-class>StudentWelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentWelcomeServlet</servlet-name>
+        <url-pattern>/Studentwelcome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentLogoutServlet</servlet-name>
+        <servlet-class>StudentLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentLogoutServlet</servlet-name>
+        <url-pattern>/StudentLogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Recruiter Servlet Definitions -->
+    <servlet>
+        <servlet-name>RecruiterRegisterServlet</servlet-name>
+        <servlet-class>RecruiterRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecruiterRegisterServlet</servlet-name>
+        <url-pattern>/RecruiterRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RecruiterLoginServlet</servlet-name>
+        <servlet-class>RecruiterLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecruiterLoginServlet</servlet-name>
+        <url-pattern>/RecruiterLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RecruiterWelcomeServlet</servlet-name>
+        <servlet-class>RecruiterWelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecruiterWelcomeServlet</servlet-name>
+        <url-pattern>/RecruiterWelcomeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RecruiterLogoutServlet</servlet-name>
+        <servlet-class>RecruiterLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecruiterLogoutServlet</servlet-name>
+        <url-pattern>/RecruiterLogoutServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>60</session-timeout>  <!-- Session lasts 60 minutes -->
+    </session-config>
+
+    <servlet>
+        <servlet-name>AddJobServlet</servlet-name>
+        <servlet-class>AddJobServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddJobServlet</servlet-name>
+        <url-pattern>/AddJobServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RemoveJobServlet</servlet-name>
+        <servlet-class>RemoveJobServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RemoveJobServlet</servlet-name>
+        <url-pattern>/RemoveJobServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RecruiterJobHistoryServlet</servlet-name>
+        <servlet-class>RecruiterJobHistoryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RecruiterJobHistoryServlet</servlet-name>
+        <url-pattern>/RecruiterJobHistoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ViewApplicationsServlet</servlet-name>
+        <servlet-class>ViewApplicationsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewApplicationsServlet</servlet-name>
+        <url-pattern>/ViewApplicationsServlet</url-pattern>
+    </servlet-mapping>
+  
+<servlet>
+    <servlet-name>SearchJobServlet</servlet-name>
+    <servlet-class>SearchJobServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SearchJobServlet</servlet-name>
+    <url-pattern>/SearchJobServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>ApplyJobServlet</servlet-name>
+    <servlet-class>ApplyJobServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ApplyJobServlet</servlet-name>
+    <url-pattern>/ApplyJobServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>StudentHistoryServlet</servlet-name>
+    <servlet-class>StudentHistoryServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>StudentHistoryServlet</servlet-name>
+    <url-pattern>/StudentHistoryServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>StudentForgotPasswordServlet</servlet-name>
+    <servlet-class>StudentForgotPasswordServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>StudentForgotPasswordServlet</servlet-name>
+    <url-pattern>/StudentForgotPasswordServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>StudentResetPasswordServlet</servlet-name>
+    <servlet-class>StudentResetPasswordServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>StudentResetPasswordServlet</servlet-name>
+    <url-pattern>/StudentResetPasswordServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>RecruiterForgotPasswordServlet</servlet-name>
+    <servlet-class>RecruiterForgotPasswordServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RecruiterForgotPasswordServlet</servlet-name>
+    <url-pattern>/RecruiterForgotPasswordServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>RecruiterResetPasswordServlet</servlet-name>
+    <servlet-class>RecruiterResetPasswordServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RecruiterResetPasswordServlet</servlet-name>
+    <url-pattern>/RecruiterResetPasswordServlet</url-pattern>
+</servlet-mapping>
+</web-app>

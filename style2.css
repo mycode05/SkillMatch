@@ -1,0 +1,215 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .extra-space {
+    padding-top: 8rem;
+  }
+  .obj-width {
+    max-width: 1200px;
+    margin: auto;
+  }
+/* General styles */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #5e4b8b;
+    padding: 10px 0;
+    position: relative;
+}
+
+#navbar .logo {
+    height: 40px;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    margin: 0 15px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Register Section */
+.sec-space1 {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #5e4b8b;
+    font-size: 36px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+.input-field div {
+    display: inline-block; /* Arrange radio buttons side by side */
+    margin-right: 15px; /* Add some spacing between each option */
+    vertical-align: middle; /* Align the radio button with its label */
+}
+
+.input-field div label {
+    margin-left: 5px; /* Add spacing between the radio button and its label */
+}
+
+
+.input-field input, .input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-field textarea {
+    resize: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #7a539e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5e3c7e;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    color: #7a539e;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #5e3c7e;
+}
+
+/* Ensure footer stays at the bottom */
+.footer{
+    background-color: #854eb9;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px; /* Vertically center text */
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Forgot Password Section */
+.forgot-password h2 {
+    text-align: center;
+    color: #5e4b8b;
+    font-size: 36px
+}
+
+.forgot-password p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.forgot-password form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password .input-field {
+    margin-bottom: 20px;
+}
+
+.forgot-password .input-field label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.forgot-password .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.forgot-password button {
+    width: 100%;
+    padding: 15px;
+    background-color: #7a539e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.forgot-password button:hover {
+    background-color: #5e3c7e;
+}
+
+.forgot-password p a {
+    color: #7a539e;
+    text-decoration: none;
+}
+
+.forgot-password p a:hover {
+    color: #5e3c7e;
+}
+.contact_info .phoneno{
+    text-align: left;
+}
+/*sucsessfully registration*/
+.sec-space{
+    padding: 30px 0;
+    height:470px;
+}

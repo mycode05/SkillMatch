@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+/* Global CSS */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.sec-space {
+  padding: 4rem 0;
+}
+.extra-space {
+  padding-top: 8rem;
+}
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+/*navbar*/
+header{
+  background-color: rgb(129, 51, 162);
+  position: fixed;
+  width:100% ;
+  z-index: 999;
+}
+#menu li a {
+  color:white;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size:20px ;
+  font-weight: 500;
+}
+#menu li a:hover{
+  color: #d065f4;
+}
+#navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+#navbar .logo{
+  width: 220px;
+}
+#menu{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+}
+#w-btn{
+  margin-left: 40px;
+  background-color: rgb(129, 51, 162);
+  color: white;
+  padding:9px 25px;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  box-shadow: none;
+  border:none;
+  cursor: pointer;
+}
+#w-btn:hover {
+  background-color: #8e4d9c; 
+  color:#fff;
+}
+a{
+  text-decoration: none;
+}
+#p-btn{
+  margin-left: 40px;
+  background-color: rgba(135, 48, 153, 0.919);
+  color: rgb(255, 255, 255);
+  padding:8px 15px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: none;
+  border:none;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+#p-btn:hover {
+  background-color: #f3e5f5;
+  color: #8333A2;
+  transform: scale(1.05);
+}
+.search input{
+  height: 20px;
+}
+/*hero*/
+.hero{
+  background-color:rgb(129, 51, 162) ;
+}
+.hero-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.h-right img{
+  width:100%;
+  object-fit:cover ;
+}
+.h-left{
+  width:45%;
+  color:white;
+}
+.h-left p{
+  padding:1.5rem 0;
+}
+.search{
+  position: relative;
+
+}
+.search input{
+  width:100%;
+  height: 3rem;
+  border-radius: 35px;
+  padding: 0 15px;
+  font-size:1rem ;
+  outline: none;
+  border: none;
+}
+.search a{
+  position: absolute;
+  top:10px;
+  right: 18px;
+}
+/*feature*/
+.features-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.feature {
+  width:400px;
+  text-align: center;
+  padding: 20px;
+  background: #a352b4;
+  border-radius: 10px;
+}
+.job-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.job-card a {
+  color: #8333A2;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*footer*/
+.footer {
+  background-color: #8333A2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.social-icons img {
+  width: 24px;
+  margin: 0 10px;
+}
+/*browsing job*/
+.search2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search2 input {
+  padding: 10px;
+  width: 4000px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search2 button {
+  padding: 10px 15px;
+  background-color: #791f9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search2 button:hover {
+  background-color: #9846a3;
+}
+#job-browsing{
+  background-color: #a287b0;
+}
+/* Reset Password Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #732b9d;
+  padding: 15px;
+  text-align: center;
+}
+
+header img {
+  max-width: 150px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  list-style-type: none;
+}
+
+#menu li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.reset-password {
+  background-color: white;
+  padding: 40px 20px;
+  margin: 50px auto;
+  max-width: 600px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reset-password h2 {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #732b9d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5f1f79;
+}
+whover:hover {
+  color: #80dd39;
+}

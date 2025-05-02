@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Job</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <h2>Search for Job</h2>
+    
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search for jobs..." onkeypress="handleKeyPress(event)">
+        <button id="searchButton" onclick="searchJobs()">Search</button>
+    </div>
+
+    <div id="jobResults" class="job-container"></div>
+    
+    <!-- Job Application Modal -->
+    <div id="applyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeApplyForm()">&times;</span>
+            <h2>Apply for Job</h2>
+            <form action="ApplyJobServlet" method="post" enctype="multipart/form-data">
+                <input type="hidden" id="jobId" name="jobId">
+                <input type="hidden" id="recruiterId" name="recruiterId">
+                <div class="file-input-container">
+                    <label for="resume">Upload Resume (PDF/DOCX):</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+
+                <label for="userDescription">Describe Yourself:</label>
+                <textarea id="userDescription" name="userDescription" rows="4" required></textarea>
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function searchJobs() {
+            let query = document.getElementById("searchBar").value.trim();
+            let searchButton = document.getElementById("searchButton");
+
+            if (query === "") {
+                alert("Please enter a search term.");
+                return;
+            }
+
+            searchButton.disabled = true;
+
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", "SearchJobServlet?query=" + encodeURIComponent(query), true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    searchButton.disabled = false;
+
+                    if (xhr.status == 200) {
+                        document.getElementById("jobResults").innerHTML = xhr.responseText;
+                    } else {
+                        document.getElementById("jobResults").innerHTML = "<p class='error-message'>Failed to fetch job results.</p>";
+                    }
+                }
+            };
+            xhr.send();
+        }
+
+        function openApplyForm(jobId, recruiterId) {
+            document.getElementById("jobId").value = jobId;
+            document.getElementById("recruiterId").value = recruiterId;
+            document.getElementById("applyModal").style.display = "block";
+        }
+
+        function closeApplyForm() {
+            document.getElementById("applyModal").style.display = "none";
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                searchJobs();
+            }
+        }
+        window.onload = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('success')) {
+            alert("Application submitted successfully!");
+        } else if (urlParams.has('error')) {
+            alert("Failed to submit application. Try again.");
+        }
+    };
+    </script>
+
+</body>
+</html>
