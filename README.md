@@ -1,29 +1,38 @@
-# JSTACK-Job-Portal-Website-By-Tech2etc
+# Job Portal Web Application
 
-Welcome to JSTACK, a job portal website project aimed at helping job seekers and employers connect efficiently. This repository contains all the necessary files and resources to build and deploy the JSTACK website.
+A web-based job portal application developed using Java Servlets, JDBC, HTML, CSS, and JavaScript. This portal facilitates user authentication and allows **recruiters** to manage job postings and **students** to apply for jobs.
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Usage](#usage)
-- [License](#license)
+## 🚀 Features
 
-## Overview
-JSTACK is a web-based platform designed to streamline the job search process. It provides a user-friendly interface for both job seekers and employers to interact, search for jobs, and post job openings. With its clean and intuitive design, JSTACK aims to enhance the job hunting experience.
+### Recruiter Functionality:
+- **Add Job**: Post a new job with details like title, company, location, salary, description, and skills.
+- **Remove Job**: Delete a job using its job ID.
+- **View Job History**: See previously posted jobs.
+- **Profile Management**: View and update recruiter profile.
+- **Dashboard**: Central hub with navigation to all recruiter-related features.
+- **Authentication**: Login, registration, and password recovery.
 
-## Features
-- Filter job listing throughout different categories
-- Dynamic job details page for every individual job listing
-- Job search functionality with filters
-- Job posting and management for employers
-- Responsive design for seamless experience across devices
-- Interactive and dynamic elements powered by JavaScript
-- Working contact us form
+### Student Functionality:
+- **Login/Register**: Secure login and registration.
+- **Application History**: View list of jobs applied to.
+- **Authentication**: Password recovery and login feedback.
 
-## Usage
-To use JSTACK, simply clone this repository to your local machine and open the `index.html` file in your preferred web browser. You can customize the website by editing the HTML, CSS, and JavaScript files as needed. Make sure to replace the placeholder images in the `img` directory with your own images.
+### General Features:
+- Dynamic content rendering using JavaScript and iframes.
+- Servlet-based backend for all data handling.
+- JDBC connectivity to a MySQL database.
+- Responsive and modular design with reusable components.
 
-## License
-This project is licensed under the MIT License.
-This README provides an overview of the JSTACK project, its features, file structure, usage instructions, guidelines for contributing, and licensing information. Adjust the sections and content as needed to fit your project.
-"# SkillMatch" 
+
+## 💡 Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Java Servlets, JDBC
+- **Database**: MySQL
+- **Server**: Apache Tomcat
+
+## 🧪 Setup Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/job-portal.git
