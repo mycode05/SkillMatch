@@ -35,4 +35,4 @@ A web-based job portal application developed using Java Servlets, JDBC, HTML, CS
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/job-portal.git
+   git clone https://github.com/mycode05/SkillMatch.git
